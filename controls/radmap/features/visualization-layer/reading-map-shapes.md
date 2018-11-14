@@ -162,17 +162,17 @@ In this case reader starts reading immediately and loaded shapes will be visible
 	End Class
 {{endregion}}
 
->Sometimes map shape data source can contain extremely large number of the items. In this case you can face with insufficient productivity of the WPF/Silverlight rendering engine. If your application is intended to show large number of map shapes, we strongly recommend using items virtualization, which is available out-of-the-box in the VisualizationLayer.   
+>Sometimes the map shape data source can contain an extremely large number of the items. In this case you can face insufficient productivity of the {{ site.framework_name }} rendering engine. If your application is intended to show a large number of map shapes, we strongly recommend using items virtualization, which is available out-of-the-box in the **VisualizationLayer**.   
 
-## AsyncReaderBase events
+## AsyncReaderBase Events
 
 The events described in this section are available for the AsyncShapeFileReader, AsyncKmlReader and AsyncSqlGeospatialDataReader since they are defined in the AsyncReaderBase class which is inherited by all of them. The example in this section uses the AsyncShapeFileReader for demonstration purposes. 
 
-* __PreviewReadShapeDataCompleted__ - Occurs when the reader completes to read shapes.
+* __PreviewReadShapeDataCompleted__: Occurs when the reader completes to read the shapes.
 
-* __ReadShapeDataCompleted__ -  Occurs when the reader completes to read shapes and pass them to target information layer.
+* __ReadShapeDataCompleted__: Occurs when the reader completes to read the shapes and pass them to the target information layer.
 
-* __PreviewReadShapeData__ - Occurs each time when a shape data is read. The next example demonstrates how you can use the PreviewReadShapeData event in order to cancel the loading of the shapes.
+* __PreviewReadShapeData__: Occurs each time a shape data is read. The next example demonstrates how you can use the PreviewReadShapeData event in order to cancel the loading of the shapes.
 
 	#### __XAML__
 	{{region radmap_visualization_layer_reading_map_shapes_4}}
@@ -197,7 +197,7 @@ The events described in this section are available for the AsyncShapeFileReader,
 		}
 	{{endregion}}
 
-* __ProgressChanged__ -  Occurs when part of data is read.
+* __ProgressChanged__: Occurs when part of data is read.
 
 ## Specifying a tooltip
 
